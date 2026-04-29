@@ -1,0 +1,50 @@
+site_name: 3D Urban Tree Intelligence
+site_description: Bratislava 2026 Implementation Testbed for operational urban tree monitoring with 3D sensing and point-cloud workflows.
+site_url: https://martinmokros.github.io/3d-urban-tree-intelligence/
+
+repo_name: martinmokros/3d-urban-tree-intelligence
+repo_url: https://github.com/martinmokros/3d-urban-tree-intelligence
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: teal
+      accent: light green
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - For Urban Tree Managers: en/for-managers.md
+  - Benchmark: en/benchmark.md
+  - Hardware: en/hardware.md
+  - Processing: en/processing.md
+  - Data Standard: en/data-standard.md
+  - Protocols: en/protocols.md
+  - Outputs: en/outputs.md
+  - Team: en/team.md
+  - Contribute: en/contribute.md
+  - Languages:
+      - Deutsch: de/index.md
+      - Francais: fr/index.md
+      - Espanol: es/index.md
+      - Italiano: it/index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true

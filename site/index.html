@@ -1,0 +1,1288 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Bratislava 2026 Implementation Testbed for operational urban tree monitoring with 3D sensing and point-cloud workflows.">
+      
+      
+      
+        <link rel="canonical" href="https://martinmokros.github.io/3d-urban-tree-intelligence/">
+      
+      
+      
+        <link rel="next" href="en/for-managers/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>3D Urban Tree Intelligence</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="3D Urban Tree Intelligence" class="md-header__button md-logo" aria-label="3D Urban Tree Intelligence" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            3D Urban Tree Intelligence
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/martinmokros/3d-urban-tree-intelligence" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    martinmokros/3d-urban-tree-intelligence
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="en/for-managers/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  For Urban Tree Managers
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="en/benchmark/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Benchmark
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="en/hardware/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hardware
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="en/processing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Processing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="en/data-standard/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Data Standard
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="en/protocols/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Protocols
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="en/outputs/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Outputs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="en/team/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Team
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="en/contribute/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contribute
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="de/" class="md-tabs__link">
+          
+  
+  
+  Languages
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="3D Urban Tree Intelligence" class="md-nav__button md-logo" aria-label="3D Urban Tree Intelligence" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    3D Urban Tree Intelligence
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/martinmokros/3d-urban-tree-intelligence" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    martinmokros/3d-urban-tree-intelligence
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/for-managers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For Urban Tree Managers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/benchmark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/data-standard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/protocols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Protocols
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/outputs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outputs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="en/contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Languages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Languages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="de/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deutsch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Francais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Espanol
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Italiano
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+<div class="hero-modern">
+  <div class="hero-modern-content">
+    <div class="home-kicker">Bratislava, 1–5 June 2026</div>
+    <h1 class="home-title">3D Urban Tree Intelligence</h1>
+    <p class="home-subtitle">
+      A hands-on international hackathon and implementation testbed for turning 3D point clouds into practical information for urban tree management.
+    </p>
+    <p class="home-subtitle">
+      In Bratislava, we will test LiDAR sensors, mobile mapping systems, low-cost prototypes, and processing workflows in real city conditions.
+    </p>
+    <div class="hero-buttons">
+      <a href="en/for-managers/">I manage urban trees</a>
+      <a href="en/hardware/" class="secondary">I provide scanning technology</a>
+      <a href="en/processing/" class="secondary">I process 3D tree data</a>
+    </div>
+  </div>
+</div>
+
+<div class="home-section">
+
+<div class="home-kicker">The Bratislava Hackathon</div>
+
+<h1>Testing 3D tree monitoring in a real city</h1>
+
+<p>
+Urban trees are essential living infrastructure. They shape shade, cooling, biodiversity, carbon storage, public space, stormwater regulation, and the quality of everyday urban life.
+</p>
+
+<p>
+To manage and monitor them well, we need to understand not only where trees are, but also their three-dimensional structure: stems, crowns, height, crown spread, growth form, and how these properties change over time.
+</p>
+
+<p>
+New 3D sensing technologies are making this increasingly practical. Terrestrial laser scanning, handheld and backpack mobile mapping, vehicle-based systems, drones, airborne LiDAR, and new low-cost prototypes can now collect detailed tree-structure data much faster than before.
+</p>
+
+<p>
+The Bratislava hackathon will bring together researchers, practitioners, hardware providers, software developers, and urban-tree stakeholders to test how these technologies can support real-world urban vegetation management.
+</p>
+
+</div>
+<div class="home-section sketch-feature">
+
+<div class="home-kicker">From point clouds to practice</div>
+
+<h2>How 3D tree data can become practical city intelligence</h2>
+
+<p>
+The hackathon will test the full chain: capturing 3D data, creating point clouds, extracting individual trees, measuring richer tree parameters, and translating the results into information that can support inventories, monitoring, planning, and future implementation pilots.
+</p>
+
+<img src="assets/images/home/pointcloud-to-practice-sketch.png" alt="Sketch showing how 3D point clouds can be implemented in practical urban tree management">
+
+</div>
+<div class="split-section">
+  <div class="text-panel">
+    <div class="home-kicker">What will happen?</div>
+    <h2>A one-week implementation testbed</h2>
+    <p>
+      From 1–5 June 2026, participants will work in Bratislava to scan selected urban tree sites, process point clouds, compare workflows, and define practical outputs for urban tree monitoring.
+    </p>
+    <p>
+      This is not only a conference and not only a data-collection campaign. It is a coordinated experiment: sensors, processing methods, data standards, field protocols, and management questions will be tested together.
+    </p>
+    <p>
+      The goal is to understand which combinations of hardware and software are fit-for-purpose for tree detection, tree catalogues, DBH, height, crown parameters, uncertainty reporting, and repeatable monitoring.
+    </p>
+  </div>
+  <div class="split-image">
+    <img src="assets/images/home/tree-pointcloud.jpg" alt="Urban tree point cloud">
+  </div>
+</div>
+
+<div class="home-section">
+
+<div class="home-kicker">What we test</div>
+
+<h2>Sensors, workflows, and practical outputs</h2>
+
+<div class="image-card-grid">
+  <div class="image-card">
+    <img src="assets/images/home/hardware-field.jpg" alt="LiDAR hardware in the field">
+    <div class="image-card-content">
+      <h3>3D sensing systems</h3>
+      <p>Static TLS, handheld mobile laser scanning, backpack systems, vehicle-based mapping, drone-derived point clouds, airborne LiDAR, and low-cost prototypes.</p>
+    </div>
+  </div>
+
+  <div class="image-card">
+    <img src="assets/images/home/tree-pointcloud.jpg" alt="Point cloud processing">
+    <div class="image-card-content">
+      <h3>Processing workflows</h3>
+      <p>Tree extraction, individual tree detection, catalogue creation, DBH, height, crown metrics, QSM, biomass-related structure, uncertainty, and reproducibility.</p>
+    </div>
+  </div>
+
+  <div class="image-card">
+    <img src="assets/images/home/urban-tree-manager.jpg" alt="Urban tree management">
+    <div class="image-card-content">
+      <h3>Management relevance</h3>
+      <p>Which outputs are useful for city tree inventories, crown assessment, monitoring, planning, maintenance prioritisation, and future implementation pilots?</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="callout-manager">
+  <h2>Do you manage urban trees?</h2>
+  <p>
+    If you are a city, municipality, public authority, utility company, park manager, arboricultural team, urban forestry unit, or vegetation manager, we would like to hear from you.
+  </p>
+  <p>
+    We are especially interested in real management questions: which tree parameters matter, which measurements are difficult to collect today, what outputs would be useful, and how 3D monitoring could support future city workflows.
+  </p>
+  <p>
+    If you manage urban trees anywhere in the world and want to explore whether these solutions could be tested in your city or organisation, please get in touch.
+  </p>
+  <p><strong>Contact:</strong> add-email-address-here</p>
+</div>
+
+<div class="split-section reverse">
+  <div class="split-image">
+    <img src="assets/images/home/hero-bratislava-trees.jpg" alt="Urban trees in Bratislava">
+  </div>
+  <div class="text-panel">
+    <div class="home-kicker">Why Bratislava?</div>
+    <h2>A real urban landscape for testing</h2>
+    <p>
+      Bratislava provides a real city context for testing 3D urban-tree monitoring. The hackathon will work with heterogeneous urban sites, including street trees, park trees, tree clusters, trees near buildings, trees with shrubs or understory, and locations with direct municipal relevance.
+    </p>
+    <p>
+      The local setup includes municipal tree data, airborne LiDAR campaigns, drone surveys, RTK support, ground-control measurements, and engagement with people responsible for urban vegetation management.
+    </p>
+    <p>
+      This makes Bratislava a strong place to test not only whether a sensor can produce a point cloud, but whether the resulting data can become useful tree-level information.
+    </p>
+  </div>
+</div>
+
+<div class="home-section">
+
+<div class="home-kicker">For companies and technology providers</div>
+
+<h2>Bring your system into a real urban-tree testbed</h2>
+
+<p>
+We welcome engagement from companies, sensor developers, mapping teams, and technology providers working with LiDAR, mobile mapping, robotics, drones, SLAM, point-cloud processing, tree analytics, or urban vegetation intelligence.
+</p>
+
+<p>
+The Bratislava hackathon is an opportunity to test systems under realistic urban conditions, understand what tree managers actually need, compare operational constraints, and contribute to an emerging practical pipeline for 3D urban tree monitoring.
+</p>
+
+<p>
+We are particularly interested in systems that can help collect or process data faster, reduce field burden, improve repeatability, support tree-level catalogues, or make 3D structure accessible to non-specialist urban-vegetation teams.
+</p>
+
+<div class="card-grid">
+  <div class="card">
+    <h3>Hardware providers</h3>
+    <p>Bring or propose terrestrial, mobile, backpack, vehicle, drone, or prototype sensing systems for realistic urban-tree testing.</p>
+  </div>
+  <div class="card">
+    <h3>Software teams</h3>
+    <p>Contribute workflows for segmentation, tree detection, DBH, height, crown metrics, catalogues, QSM, biomass, or uncertainty reporting.</p>
+  </div>
+  <div class="card">
+    <h3>Implementation partners</h3>
+    <p>Help translate point clouds into practical outputs for inventories, monitoring, planning, and future pilot deployments.</p>
+  </div>
+</div>
+
+</div>
+
+<div class="home-section">
+
+<div class="home-kicker">Expected outputs</div>
+
+<h2>Built for practical reuse</h2>
+
+<div class="output-strip">
+  <div class="output-item">
+    <strong>Benchmark tables</strong>
+    Sensor and workflow comparison.
+  </div>
+  <div class="output-item">
+    <strong>Open protocols</strong>
+    Field, ingest, metadata, and QA.
+  </div>
+  <div class="output-item">
+    <strong>Tree-level outputs</strong>
+    Detection, catalogues, DBH, height, and crown parameters.
+  </div>
+  <div class="output-item">
+    <strong>Policy brief</strong>
+    Guidance for municipalities.
+  </div>
+  <div class="output-item">
+    <strong>Training materials</strong>
+    Videos, figures, and workflow docs.
+  </div>
+  <div class="output-item">
+    <strong>Publications</strong>
+    Dataset and synthesis papers.
+  </div>
+</div>
+
+<div class="home-section collaborators-section">
+
+<div class="home-kicker">Collaborators</div>
+
+<h2>Organisations contributing to the Bratislava implementation testbed</h2>
+
+<p>
+The hackathon brings together universities, research institutes, municipalities, technology providers, and processing teams interested in practical 3D urban tree monitoring.
+</p>
+
+<div class="logo-grid">
+
+  <a class="logo-card" href="https://urbanforestrynetwork.eu" target="_blank" rel="noopener">
+    <img src="assets/images/logos/intuf.jpg" alt="INTUF COST Action logo">
+  </a>
+
+  <a class="logo-card" href="https://www.ucl.ac.uk/" target="_blank" rel="noopener">
+    <img src="assets/images/logos/ucl.png" alt="University College London logo">
+  </a>
+
+  <a class="logo-card" href="https://www.sav.sk/" target="_blank" rel="noopener">
+    <img src="assets/images/logos/slovak-academy.png" alt="Slovak Academy of Sciences logo">
+  </a>
+
+  <a class="logo-card" href="https://3dforecotech.eu/" target="_blank" rel="noopener">
+    <img src="assets/images/logos/3dforecotech.png" alt="3DForEcoTech logo">
+  </a>
+
+</div>
+
+<p class="collaborators-note">
+More collaborators and technology providers will be added as participation is confirmed.
+</p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+        
+          
+          <a href="en/for-managers/" class="md-footer__link md-footer__link--next" aria-label="Next: For Urban Tree Managers">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                For Urban Tree Managers
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
