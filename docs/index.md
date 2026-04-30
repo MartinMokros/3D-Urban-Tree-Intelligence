@@ -219,32 +219,61 @@ We are particularly interested in systems that can help collect or process data 
 <h2>Organisations contributing to the Bratislava implementation testbed</h2>
 
 <p>
-The hackathon brings together universities, research institutes, municipalities, technology providers, and processing teams interested in practical 3D urban tree monitoring.
+The hackathon brings together academic partners, urban-forestry stakeholders, technology providers, and processing teams interested in practical 3D urban tree monitoring.
 </p>
 
-<div class="logo-grid">
+<div class="collaborator-group">
+  <h3>Academic and research partners</h3>
 
-  <a class="logo-card" href="https://urbanforestrynetwork.eu" target="_blank" rel="noopener">
-    <img src="assets/images/logos/intuf.jpg" alt="INTUF COST Action logo">
-  </a>
+  <div class="logo-grid compact">
+    <a class="logo-card" href="https://www.ucl.ac.uk/" target="_blank" rel="noopener">
+      <img src="assets/images/logos/ucl.png" alt="University College London logo">
+      <span>University College London</span>
+    </a>
 
-  <a class="logo-card" href="https://www.ucl.ac.uk/" target="_blank" rel="noopener">
-    <img src="assets/images/logos/ucl.png" alt="University College London logo">
-  </a>
+    <a class="logo-card" href="https://www.sav.sk/" target="_blank" rel="noopener">
+      <img src="assets/images/logos/slovak-academy.png" alt="Slovak Academy of Sciences logo">
+      <span>Slovak Academy of Sciences</span>
+    </a>
 
-  <a class="logo-card" href="https://www.sav.sk/" target="_blank" rel="noopener">
-    <img src="assets/images/logos/slovak-academy.png" alt="Slovak Academy of Sciences logo">
-  </a>
+    <a class="logo-card" href="https://geography.sav.sk/en/" target="_blank" rel="noopener">
+      <img src="assets/images/logos/SAV_GEO.svg" alt="Slovak Academy of Sciences logo">
+      <span>Institute of Geography SAV</span>
+    </a>
 
-  <a class="logo-card" href="https://3dforecotech.eu/" target="_blank" rel="noopener">
-    <img src="assets/images/logos/3dforecotech.png" alt="3DForEcoTech logo">
-  </a>
+  </div>
+</div>
 
+<div class="collaborator-group">
+  <h3>Stakeholders and networks</h3>
+
+  <div class="logo-grid compact">
+    <a class="logo-card" href="https://urbanforestrynetwork.eu/" target="_blank" rel="noopener">
+      <img src="assets/images/logos/intuf.jpg" alt="Urban Forestry Network logo">
+      <span>INTUF COST Action</span>
+    </a>
+
+  </div>
+</div>
+
+<div class="collaborator-group">
+  <h3>Technology and business collaborators</h3>
+
+  <div class="logo-grid compact">
+    <a class="logo-card" href="https://www.mandeye.com/" target="_blank" rel="noopener">
+      <img src="assets/images/logos/mandeye.jpg" alt="Mandeye logo">
+      <span>Mandeye</span>
+    </a>
+
+    <a class="logo-card" href="https://www.xplore4d.sk/en/" target="_blank" rel="noopener">
+      <img src="assets/images/logos/xplore4D.png" alt="xplore4D logo">
+      <span>Xplore 4D</span>
+    </a>
+  </div>
 </div>
 
 <p class="collaborators-note">
-More collaborators and technology providers will be added as participation is confirmed.
+More collaborators, municipalities, and technology providers will be added as participation is confirmed.
 </p>
 
-</div>
 </div>
