@@ -684,3 +684,13 @@
     border-radius: 0.9rem;
   }
 }
+
+.team-country {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--uti-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
