@@ -524,7 +524,6 @@
   text-transform: uppercase;
 }
 
-/* Fixed, consistent logo grid */
 .logo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 190px));
@@ -534,10 +533,9 @@
   margin: 0;
 }
 
-/* Same size cards in every section */
 .logo-card {
   width: 190px;
-  height: 150px;
+  height: 140px;
   padding: 1rem;
   border-radius: 1.1rem;
   background: rgba(255, 255, 255, 0.92);
@@ -549,7 +547,7 @@
   align-items: center;
   justify-content: center;
 
-  gap: 0.75rem;
+  gap: 0.55rem;
   text-align: center;
   text-decoration: none;
 
@@ -563,31 +561,39 @@
 }
 
 .logo-card img {
-  width: 145px;
-  height: 70px;
+  width: 155px;
+  height: 82px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
   filter: saturate(0.98);
 }
 
-.logo-card span {
+.logo-country {
   display: block;
   width: 100%;
-  color: var(--uti-green-dark);
-  font-size: 0.78rem;
-  font-weight: 750;
-  line-height: 1.25;
+  color: var(--uti-muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.15;
   text-align: center;
 }
 
-/* For very wide logos */
+.logo-country {
+  display: block;
+  width: 100%;
+  color: var(--uti-muted);
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.15;
+  text-align: center;
+}
+
 .logo-card.logo-wide img {
   width: 155px;
   height: 62px;
 }
 
-/* For faint or circular logos */
 .logo-card.logo-tall img {
   width: 120px;
   height: 78px;
@@ -607,11 +613,74 @@
 
   .logo-card {
     width: auto;
-    height: 140px;
+    height: 160px;
   }
 
   .logo-card img {
     width: 125px;
     height: 60px;
+  }
+}
+
+/* -------------------------------------------------------
+   Team page
+   ------------------------------------------------------- */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1.4rem;
+  margin: 2rem 0 4rem 0;
+}
+
+.team-card {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--uti-green-dark);
+  background: #ffffff;
+  border: 1px solid rgba(0, 63, 58, 0.12);
+  border-radius: 1.4rem;
+  padding: 1rem;
+  box-shadow: 0 10px 28px rgba(0, 42, 38, 0.07);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 42px rgba(0, 42, 38, 0.13);
+  border-color: rgba(116, 192, 67, 0.55);
+}
+
+.team-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 1.1rem;
+  display: block;
+  margin-bottom: 0.85rem;
+  background: #eef8f1;
+}
+
+.team-card h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.25;
+  color: var(--uti-green-dark);
+}
+
+@media screen and (max-width: 700px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    gap: 1rem;
+  }
+
+  .team-card {
+    padding: 0.75rem;
+    border-radius: 1.1rem;
+  }
+
+  .team-card img {
+    border-radius: 0.9rem;
   }
 }
