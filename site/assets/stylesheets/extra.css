@@ -432,6 +432,168 @@
 }
 
 /* -------------------------------------------------------
+   Collaborator logos
+   ------------------------------------------------------- */
+
+.collaborators-section {
+  padding: 2.5rem;
+  border-radius: 2rem;
+  background:
+    radial-gradient(circle at top left, rgba(116, 192, 67, 0.10), transparent 28rem),
+    linear-gradient(180deg, #ffffff 0%, #f4faf6 100%);
+  border: 1px solid rgba(0, 63, 58, 0.12);
+  box-shadow: 0 18px 54px rgba(0, 42, 38, 0.06);
+}
+
+.collaborator-group {
+  margin-top: 2.4rem;
+}
+
+.collaborator-group h3 {
+  margin: 0 0 1rem 0;
+  color: var(--uti-green-dark);
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 190px));
+  gap: 1rem;
+  justify-content: start;
+  align-items: stretch;
+  margin: 0;
+}
+
+.logo-card {
+  width: 190px;
+  height: 140px;
+  padding: 1rem;
+  border-radius: 1.1rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 63, 58, 0.10);
+  box-shadow: 0 8px 22px rgba(0, 42, 38, 0.055);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.55rem;
+  text-align: center;
+  text-decoration: none;
+
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.logo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(0, 42, 38, 0.12);
+  border-color: rgba(116, 192, 67, 0.45);
+}
+
+.logo-card img {
+  width: 155px;
+  height: 82px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: saturate(0.98);
+}
+
+.logo-country {
+  display: block;
+  width: 100%;
+  color: var(--uti-muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.logo-name {
+  display: none;
+}
+
+.logo-card.logo-wide img {
+  width: 160px;
+  height: 76px;
+}
+
+.logo-card.logo-tall img {
+  width: 130px;
+  height: 86px;
+}
+
+.collaborators-note {
+  color: var(--uti-muted);
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+/* -------------------------------------------------------
+   Team page
+   ------------------------------------------------------- */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 155px);
+  gap: 1.1rem;
+  justify-content: center;
+  margin: 2rem auto 4rem auto;
+  max-width: 1320px;
+}
+
+.team-card {
+  display: block;
+  width: 155px;
+  min-height: 250px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--uti-green-dark);
+  background: #ffffff;
+  border: 1px solid rgba(0, 63, 58, 0.12);
+  border-radius: 1.2rem;
+  padding: 0.85rem;
+  box-shadow: 0 10px 28px rgba(0, 42, 38, 0.07);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 42px rgba(0, 42, 38, 0.13);
+  border-color: rgba(116, 192, 67, 0.55);
+}
+
+.team-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0.95rem;
+  display: block;
+  margin-bottom: 0.75rem;
+  background: #eef8f1;
+}
+
+.team-card h3 {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.18;
+  color: var(--uti-green-dark);
+}
+
+.team-country {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--uti-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+
+/* -------------------------------------------------------
    Mobile responsiveness
    ------------------------------------------------------- */
 
@@ -498,107 +660,6 @@
   }
 }
 
-/* -------------------------------------------------------
-   Collaborator logos
-   ------------------------------------------------------- */
-
-.collaborators-section {
-  padding: 2.5rem;
-  border-radius: 2rem;
-  background:
-    radial-gradient(circle at top left, rgba(116, 192, 67, 0.10), transparent 28rem),
-    linear-gradient(180deg, #ffffff 0%, #f4faf6 100%);
-  border: 1px solid rgba(0, 63, 58, 0.12);
-  box-shadow: 0 18px 54px rgba(0, 42, 38, 0.06);
-}
-
-.collaborator-group {
-  margin-top: 2.4rem;
-}
-
-.collaborator-group h3 {
-  margin: 0 0 1rem 0;
-  color: var(--uti-green-dark);
-  font-size: 1.05rem;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
-/* Fixed, consistent logo grid */
-.logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 190px));
-  gap: 1rem;
-  justify-content: start;
-  align-items: stretch;
-  margin: 0;
-}
-
-/* Same size cards in every section */
-.logo-card {
-  width: 190px;
-  height: 150px;
-  padding: 1rem;
-  border-radius: 1.1rem;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(0, 63, 58, 0.10);
-  box-shadow: 0 8px 22px rgba(0, 42, 38, 0.055);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  gap: 0.75rem;
-  text-align: center;
-  text-decoration: none;
-
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-}
-
-.logo-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 34px rgba(0, 42, 38, 0.12);
-  border-color: rgba(116, 192, 67, 0.45);
-}
-
-.logo-card img {
-  width: 145px;
-  height: 70px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-  filter: saturate(0.98);
-}
-
-.logo-card span {
-  display: block;
-  width: 100%;
-  color: var(--uti-green-dark);
-  font-size: 0.78rem;
-  font-weight: 750;
-  line-height: 1.25;
-  text-align: center;
-}
-
-/* For very wide logos */
-.logo-card.logo-wide img {
-  width: 155px;
-  height: 62px;
-}
-
-/* For faint or circular logos */
-.logo-card.logo-tall img {
-  width: 120px;
-  height: 78px;
-}
-
-.collaborators-note {
-  color: var(--uti-muted);
-  font-size: 0.95rem;
-  margin-top: 2rem;
-}
-
 @media screen and (max-width: 700px) {
   .logo-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -607,11 +668,27 @@
 
   .logo-card {
     width: auto;
-    height: 140px;
+    height: 130px;
   }
 
   .logo-card img {
-    width: 125px;
-    height: 60px;
+    width: 130px;
+    height: 68px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.9rem;
+  }
+
+  .team-card {
+    width: auto;
+    min-height: 225px;
+    padding: 0.7rem;
+    border-radius: 1rem;
+  }
+
+  .team-card img {
+    border-radius: 0.85rem;
   }
 }

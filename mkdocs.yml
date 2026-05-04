@@ -35,11 +35,7 @@ nav:
   - Outputs: en/outputs.md
   - Team: en/team.md
   - Contribute: en/contribute.md
-  - Languages:
-      - Deutsch: de/index.md
-      - Francais: fr/index.md
-      - Espanol: es/index.md
-      - Italiano: it/index.md
+
 
 markdown_extensions:
   - admonition

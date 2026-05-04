@@ -122,7 +122,7 @@ The hackathon will test the full chain: capturing 3D data, creating point clouds
   <p>
     If you manage urban trees anywhere in the world and want to explore whether these solutions could be tested in your city or organisation, please get in touch.
   </p>
-  <p><strong>Contact:</strong> add-email-address-here</p>
+  <p><strong>Contact:</strong> Dr. Martin Mokros, UCL, m.mokros@ucl.ac.uk</p>
 </div>
 
 <div class="split-section reverse">
@@ -212,68 +212,3 @@ We are particularly interested in systems that can help collect or process data 
   </div>
 </div>
 
-<div class="home-section collaborators-section">
-
-<div class="home-kicker">Collaborators</div>
-
-<h2>Organisations contributing to the Bratislava implementation testbed</h2>
-
-<p>
-The hackathon brings together academic partners, urban-forestry stakeholders, technology providers, and processing teams interested in practical 3D urban tree monitoring.
-</p>
-
-<div class="collaborator-group">
-  <h3>Academic and research partners</h3>
-
-  <div class="logo-grid compact">
-    <a class="logo-card" href="https://www.ucl.ac.uk/" target="_blank" rel="noopener">
-      <img src="assets/images/logos/ucl.png" alt="University College London logo">
-      <span>University College London</span>
-    </a>
-
-    <a class="logo-card" href="https://www.sav.sk/" target="_blank" rel="noopener">
-      <img src="assets/images/logos/slovak-academy.png" alt="Slovak Academy of Sciences logo">
-      <span>Slovak Academy of Sciences</span>
-    </a>
-
-    <a class="logo-card" href="https://geography.sav.sk/en/" target="_blank" rel="noopener">
-      <img src="assets/images/logos/SAV_GEO.svg" alt="Slovak Academy of Sciences logo">
-      <span>Institute of Geography SAV</span>
-    </a>
-
-  </div>
-</div>
-
-<div class="collaborator-group">
-  <h3>Stakeholders and networks</h3>
-
-  <div class="logo-grid compact">
-    <a class="logo-card" href="https://urbanforestrynetwork.eu/" target="_blank" rel="noopener">
-      <img src="assets/images/logos/intuf.jpg" alt="Urban Forestry Network logo">
-      <span>INTUF COST Action</span>
-    </a>
-
-  </div>
-</div>
-
-<div class="collaborator-group">
-  <h3>Technology and business collaborators</h3>
-
-  <div class="logo-grid compact">
-    <a class="logo-card" href="https://www.mandeye.com/" target="_blank" rel="noopener">
-      <img src="assets/images/logos/mandeye.jpg" alt="Mandeye logo">
-      <span>Mandeye</span>
-    </a>
-
-    <a class="logo-card" href="https://www.xplore4d.sk/en/" target="_blank" rel="noopener">
-      <img src="assets/images/logos/xplore4D.png" alt="xplore4D logo">
-      <span>Xplore 4D</span>
-    </a>
-  </div>
-</div>
-
-<p class="collaborators-note">
-More collaborators, municipalities, and technology providers will be added as participation is confirmed.
-</p>
-
-</div>
