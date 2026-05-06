@@ -40,11 +40,23 @@ The Bratislava implementation testbed brings together people working across urba
     <span class="team-country">🇪🇸 Spain</span>
   </a>
 
+  <a class="team-card" href="https://www.linkedin.com/in/mariana-campos-719378334/" target="_blank" rel="noopener">
+    <img src="../../assets/images/Team/CamposMariana.jpg" alt="Mariana Campos">
+    <h3>Mariana Campos</h3>
+    <span class="team-country">🇫🇮 Finland</span>
+  </a>
+
   <a class="team-card" href="https://www.uantwerpen.be/en/staff/barbara-d-hont_29489/" target="_blank" rel="noopener">
     <img src="../../assets/images/Team/barbara_dhont_www.uantwerpen.beenstaffbarbara-d-hont_29489.jpg" alt="Barbara D'hont">
     <h3>Barbara D'hont</h3>
     <span class="team-country">🇧🇪 Belgium</span>
   </a>
+
+  <div class="team-card">
+    <img src="../../assets/images/Team/Samuel_Ferencei.jpg" alt="Samuel Ferencei">
+    <h3>Samuel Ferencei</h3>
+    <span class="team-country">🇸🇰 Slovakia</span>
+  </div>
 
   <div class="team-card">
     <img src="../../assets/images/Team/tomas_goga.jpg" alt="Tomas Goga">
@@ -92,6 +104,12 @@ The Bratislava implementation testbed brings together people working across urba
     <img src="../../assets/images/Team/Andres_Ochoa.jpeg" alt="Andres Ochoa">
     <h3>Andres Ochoa</h3>
     <span class="team-country">🇨🇴 Colombia</span>
+  </div>
+
+  <div class="team-card">
+    <img src="../../assets/images/Team/Ivan_Petro.jpg" alt="Ivan Petro">
+    <h3>Ivan Petro</h3>
+    <span class="team-country">🇸🇰 Slovakia</span>
   </div>
 
   <a class="team-card" href="https://www.tu.berlin/urbanoikos/ueber-uns/team/plakias-alexander" target="_blank" rel="noopener">
