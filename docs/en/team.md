@@ -106,6 +106,12 @@ The Bratislava implementation testbed brings together people working across urba
     <span class="team-country">🇨🇴 Colombia</span>
   </div>
 
+ <div class="team-card">
+    <img src="../../assets/images/Team/Marko_Pasko_Slovakia.png" alt="Marko Paško">
+    <h3>Marko Paško</h3>
+    <span class="team-country">🇸🇰 Slovakia</span>
+  </div>
+
   <div class="team-card">
     <img src="../../assets/images/Team/Ivan_Petro.jpg" alt="Ivan Petro">
     <h3>Ivan Petro</h3>
@@ -206,6 +212,12 @@ The hackathon brings together academic partners, urban-forestry stakeholders, te
       <span class="logo-country">🇩🇪 Germany</span>
     </a>
 
+    <a class="logo-card" href="https://www.x3d.sk/vav/X3RSLab.pdf" target="_blank" rel="noopener">
+      <img src="../../assets/images/logos/academic/x3d_logo.png" alt="x3d logo">
+      <span class="logo-country">🇸🇰 Slovakia</span>
+    </a>
+ 
+
     <a class="logo-card" href="https://www.ucl.ac.uk/" target="_blank" rel="noopener">
       <img src="../../assets/images/logos/academic/ucl.png" alt="University College London logo">
       <span class="logo-country">🇬🇧 United Kingdom</span>
@@ -254,6 +266,12 @@ The hackathon brings together academic partners, urban-forestry stakeholders, te
   <h3>Technology and business collaborators</h3>
 
   <div class="logo-grid compact">
+
+    <a class="logo-card" href="https://www.riegl.com/en-uk/" target="_blank" rel="noopener">
+      <img src="../../assets/images/logos/RIEGL_Logo.jpg" alt="Mandeye logo">
+      <span class="logo-country">🇦🇹 Austria</span>
+    </a>
+
     <a class="logo-card" href="https://www.mandeye.com/" target="_blank" rel="noopener">
       <img src="../../assets/images/logos/mandeye.jpg" alt="Mandeye logo">
       <span class="logo-country">🇵🇱 Poland</span>
