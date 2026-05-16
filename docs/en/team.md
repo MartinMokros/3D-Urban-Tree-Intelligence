@@ -19,7 +19,7 @@ The Bratislava implementation testbed brings together people working across urba
   <a class="team-card" href="https://www.linesresearchgroup.com/dr-anne-baranger" target="_blank" rel="noopener">
     <img src="../../assets/images/Team/anne_baranger_https_www.linesresearchgroup.com_dr-anne-baranger_.jpeg" alt="Anne Baranger">
     <h3>Anne Baranger</h3>
-    <span class="team-country">🇬🇧 United Kingdom</span>
+    <span class="team-country">🇬🇧 UK</span>
   </a>
 
   <div class="team-card">
@@ -31,7 +31,7 @@ The Bratislava implementation testbed brings together people working across urba
   <div class="team-card">
     <img src="../../assets/images/Team/jude_mcfarlanebond.JPG" alt="Jude McFarlane Bond">
     <h3>Jude McFarlane Bond</h3>
-    <span class="team-country">🇬🇧 United Kingdom</span>
+    <span class="team-country">🇬🇧 UK</span>
   </div>
 
   <a class="team-card" href="https://www.researchgate.net/profile/Carlos-Cabo-2" target="_blank" rel="noopener">
@@ -85,7 +85,7 @@ The Bratislava implementation testbed brings together people working across urba
   <a class="team-card" href="https://www.linkedin.com/in/martinmokros/" target="_blank" rel="noopener">
     <img src="../../assets/images/Team/martin.mokros.jpeg" alt="Martin Mokros">
     <h3>Martin Mokros</h3>
-    <span class="team-country">🇬🇧 United Kingdom</span>
+    <span class="team-country">🇬🇧 UK</span>
   </a>
 
   <div class="team-card">
@@ -194,7 +194,7 @@ The hackathon brings together academic partners, urban-forestry stakeholders, te
 
     <a class="logo-card" href="https://www.kew.org/" target="_blank" rel="noopener">
       <img src="../../assets/images/logos/academic/royal-botanic-gardens-kew.png" alt="Royal Botanic Gardens, Kew logo">
-      <span class="logo-country">🇬🇧 United Kingdom</span>
+      <span class="logo-country">🇬🇧 UK</span>
     </a>
 
     <a class="logo-card" href="https://www.tuzvo.sk/en/technical-university-zvolen" target="_blank" rel="noopener">
@@ -220,7 +220,7 @@ The hackathon brings together academic partners, urban-forestry stakeholders, te
 
     <a class="logo-card" href="https://www.ucl.ac.uk/" target="_blank" rel="noopener">
       <img src="../../assets/images/logos/academic/ucl.png" alt="University College London logo">
-      <span class="logo-country">🇬🇧 United Kingdom</span>
+      <span class="logo-country">🇬🇧 UK</span>
     </a>
 
     <a class="logo-card" href="https://udelar.edu.uy/" target="_blank" rel="noopener">
@@ -230,7 +230,7 @@ The hackathon brings together academic partners, urban-forestry stakeholders, te
 
     <a class="logo-card" href="https://www.cam.ac.uk/" target="_blank" rel="noopener">
       <img src="../../assets/images/logos/academic/university-of-cambridge.png" alt="University of Cambridge logo">
-      <span class="logo-country">🇬🇧 United Kingdom</span>
+      <span class="logo-country">🇬🇧 UK</span>
     </a>
 
     <a class="logo-card" href="https://www.unipd.it/en" target="_blank" rel="noopener">
@@ -289,6 +289,16 @@ The hackathon brings together academic partners, urban-forestry stakeholders, te
 
     <a class="logo-card" href="https://www.photomap.sk/?lang=en" target="_blank" rel="noopener">
       <img src="../../assets/images/logos/photomap.png" alt="Photomap logo">
+      <span class="logo-country">🇸🇰 Slovakia</span>
+    </a>
+
+    <a class="logo-card" href="https://www.geotech.sk" target="_blank" rel="noopener">
+      <img src="../../assets/images/logos/logo-geotech-800x600.png" alt="Geotech logo">
+      <span class="logo-country">🇸🇰 Slovakia</span>
+    </a>
+
+    <a class="logo-card" href="https://www.lidaretto.com" target="_blank" rel="noopener">
+      <img src="../../assets/images/logos/lidaretto_black_YPL.jpg" alt="lidaretto logo">
       <span class="logo-country">🇸🇰 Slovakia</span>
     </a>
 
