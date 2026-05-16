@@ -286,6 +286,12 @@ The hackathon brings together academic partners, urban-forestry stakeholders, te
       <img src="../../assets/images/logos/CEDA.svg" alt="CEDA logo">
       <span class="logo-country">🇨🇿 Czechia</span>
     </a>
+
+    <a class="logo-card" href="https://www.photomap.sk/?lang=en" target="_blank" rel="noopener">
+      <img src="../../assets/images/logos/photomap.png" alt="Photomap logo">
+      <span class="logo-country">🇸🇰 Slovakia</span>
+    </a>
+
   </div>
 </div>
 
