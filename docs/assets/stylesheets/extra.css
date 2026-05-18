@@ -798,3 +798,15 @@
     width: 100%;
   }
 }
+
+.survey-cta {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  background: linear-gradient(135deg, rgba(30, 120, 80, 0.10), rgba(60, 160, 120, 0.06));
+  border: 1px solid rgba(30, 120, 80, 0.18);
+}
+
+.survey-cta h2 {
+  margin-top: 0;
+}

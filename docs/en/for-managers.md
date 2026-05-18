@@ -17,6 +17,21 @@ hide:
   </div>
 </div>
 
+## Tell us what cities need from 3D tree monitoring
+
+We are preparing an international implementation testbed on 3D urban tree monitoring in Bratislava. The aim is to test how terrestrial, mobile, backpack, vehicle-mounted and prototype LiDAR systems can support real urban tree management.
+
+But before we benchmark the technology, we want to hear from the people who manage urban trees.
+
+What information would help your city?  
+Which measurements would be useful?  
+What are the biggest barriers to implementation?  
+What evidence would make these technologies worth adopting?
+
+Your response can directly influence what we test during and after the Bratislava hackathon and what guidance we prepare for cities afterwards.
+
+[Complete the questionnaire](https://forms.cloud.microsoft/e/jLujqQYiCT){ .md-button .md-button--primary }
+
 <div class="home-section">
 
 <div class="home-kicker">Why this matters</div>
