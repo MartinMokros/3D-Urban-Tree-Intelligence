@@ -810,3 +810,54 @@
 .survey-cta h2 {
   margin-top: 0;
 }
+
+/* -------------------------------------------------------
+   COST / INTUF acknowledgement footer
+   ------------------------------------------------------- */
+
+.cost-footer {
+  max-width: 1180px;
+  margin: 4rem auto 1.5rem auto;
+  padding: 1.6rem 2rem;
+  border-top: 1px solid rgba(0, 63, 58, 0.14);
+  text-align: center;
+}
+
+.cost-footer p {
+  margin: 0 auto 1.2rem auto;
+  max-width: 900px;
+  color: var(--uti-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.cost-footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cost-footer-logos img {
+  max-height: 58px;
+  max-width: 220px;
+  object-fit: contain;
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+  .cost-footer {
+    padding: 1.2rem;
+    margin-top: 3rem;
+  }
+
+  .cost-footer-logos {
+    gap: 1rem;
+  }
+
+  .cost-footer-logos img {
+    max-height: 46px;
+    max-width: 170px;
+  }
+}
