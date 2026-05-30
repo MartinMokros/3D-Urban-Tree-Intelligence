@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block footer %}
+  <div class="cost-footer">
+    <p>
+      This website is based upon work from COST Action INTUF, CA23148, supported by COST
+      (European Cooperation in Science and Technology).
+    </p>
+
+    <div class="cost-footer-logos">
+      <img src="{{ base_url }}/assets/images/logos/footer/cost-logo.jpg" alt="COST logo">
+      <img src="{{ base_url }}/assets/images/logos/footer/eu-funded.png" alt="Funded by the European Union logo">
+      <img src="{{ base_url }}/assets/images/logos/footer/intuf.jpg" alt="INTUF logo">
+    </div>
+  </div>
+
+  {{ super() }}
+{% endblock %}

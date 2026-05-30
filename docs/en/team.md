@@ -163,6 +163,16 @@ The hackathon brings together academic partners, urban-forestry stakeholders, te
 
   <div class="logo-grid compact">
 
+    <a class="logo-card" href="https://www.sav.sk/?lang=en" target="_blank" rel="noopener">
+      <img src="../../assets/images/logos/academic/SAV_logo.png" alt="SAV logo">
+      <span class="logo-country">🇸🇰 Slovakia</span>
+    </a>
+
+    <a class="logo-card" href="https://geography.sav.sk/en/" target="_blank" rel="noopener">
+      <img src="../../assets/images/logos/academic/IG_SAV_logo.png" alt="IG SAV logo">
+      <span class="logo-country">🇸🇰 Slovakia</span>
+    </a>
+
     <a class="logo-card" href="https://www.aalto.fi/en" target="_blank" rel="noopener">
       <img src="../../assets/images/logos/academic/aalto-university.png" alt="Aalto University logo">
       <span class="logo-country">🇫🇮 Finland</span>

@@ -7,6 +7,7 @@ repo_url: https://github.com/martinmokros/3d-urban-tree-intelligence
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   features:
     - navigation.tabs
